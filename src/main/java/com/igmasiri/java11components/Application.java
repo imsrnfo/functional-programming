@@ -50,6 +50,12 @@ public class Application {
         Predicate<Integer> lesserthan = i -> (i < 18);
         System.out.println(lesserthan.test(10));
 
+        //suppliers (no toman argumentos pero retornan un objeto)
+        Supplier<Integer> obtenerEntero = ()->{
+            return 1;
+        };
+        System.out.println(obtenerEntero);
+
     }
 
 }
